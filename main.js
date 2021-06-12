@@ -108,7 +108,7 @@ if(car2 > 700){
 }
   }
 
-function up(){
+function car1_up(){
     if(car1_y >=0){
         car1_y=car1_y-10;
         console.log("When up arrow is pressed, x="+car1_x+"|y="+car1_y);
@@ -118,7 +118,7 @@ function up(){
     }
 }
 
-function down(){
+function car1_down(){
     if(car1_y <=500){
         car1_y=car1_y+10;
         console.log("When down arrow is pressed, x="+car1_x+"|y="+car1_y);
@@ -128,7 +128,7 @@ function down(){
     }
 }
 
-function left(){
+function car1_left(){
     if(car1_x >=0){
         car1_x=car1_x-10;
         console.log("When left arrow is pressed, x="+car1_x+"|y="+car1_y);
@@ -137,8 +137,18 @@ function left(){
         uploadcar2();
     }
 }
+function car1_right(){
+    if(car1_x <=700){
+        car1_x=car1_x+10;
+        console.log("When right arrow is pressed, x="+car1_x+"|y="+car1_y);
+        uploadBackground();
+        uploadcar1();
+        uploadcar2();
+    }
+}
 
-function right(){
+
+function car2_right(){
     if(car2_x <=700){
         car2_x=car2_x+10;
         console.log("When right arrow is pressed, x="+car2_x+"|y="+car2_y);
@@ -148,7 +158,7 @@ function right(){
     }
 }
 
-function up(){
+function car2_up(){
     if(car2_y >=0){
         car2_y=car2_y-10;
         console.log("When up arrow is pressed, x="+car2_x+"|y="+car2_y);
@@ -158,7 +168,7 @@ function up(){
     }
 }
 
-function down(){
+function car2_down(){
     if(car1_y <=500){
         car1_y=car1_y+10;
         console.log("When down arrow is pressed, x="+car1_x+"|y="+car1_y);
@@ -168,20 +178,10 @@ function down(){
     }
 }
 
-function left(){
+function car2_left(){
     if(car2_x >=0){
         car2_x=car2_x-10;
         console.log("When left arrow is pressed, x="+car2_x+"|y="+car2_y);
-        uploadBackground();
-        uploadcar1();
-        uploadcar2();
-    }
-}
-
-function right(){
-    if(car2_x <=700){
-        car2_x=car2_x+10;
-        console.log("When right arrow is pressed, x="+car2_x+"|y="+car2_y);
         uploadBackground();
         uploadcar1();
         uploadcar2();
