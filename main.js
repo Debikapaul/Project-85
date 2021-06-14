@@ -169,9 +169,9 @@ function car2_up(){
 }
 
 function car2_down(){
-    if(car1_y <=500){
-        car1_y=car1_y+10;
-        console.log("When down arrow is pressed, x="+car1_x+"|y="+car1_y);
+    if(car2_y <=500){
+        car2_y=car2_y+10;
+        console.log("When down arrow is pressed, x="+car2_x+"|y="+car2_y);
         uploadBackground();
         uploadcar1();
         uploadcar2();
